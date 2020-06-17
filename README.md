@@ -1,12 +1,45 @@
-# vue-ssr-docs
+## 基本信息
+  - 微信：xinzejy
+  - 邮箱：xinzeedu@163.com
 
-Comprehensive guide for SSR (Server-Side Rendering) in Vue.js. Live at [ssr.vuejs.org](https://ssr.vuejs.org).
+## 专业技能
+- [**前端基础**]()
+  
+  Html，JavaScript，Es6 ，Css3。
+- [**前端框架**]()
+  
+  Vue，React，Element-ui，Vant，Webpack。
+- [**后端开发**]()
+  
+  Nodejs（express），Mysql，Shell，SSR，预渲染。
+- [**版本，测试，打包工具**]()
+  
+  Git，Yapi，Puppeteer ，Webpack。
 
-## Development
+- [**其他**]()
+  
+  [浏览器插件开发]()，[微信小程序开发]()，[直播]()。
 
-This site is powered by [VuePress](https://vuepress.vuejs.org/).
 
-``` bash
-yarn
-yarn dev
-```
+## 项目经验
+   [**百度网盘 免费送会员SPA**]()
+- 项目描述：手机验证码登录，银行卡绑定，金额存取，积分商品兑换，三类户升级，图像上传等。
+- 技术栈：Vue全家桶，Better-Scroll，MandMobile，Git。
+- 收获：利用模块化分离业务和功能代码提高复用性，以方便其他积分商城业务复用。 shell脚本封装部署流程
+
+[**北京银行京彩生活APP  积分商城 SPA 1/2期**]()
+- 项目描述：“京彩生活APP”中的积分商城入口，主要功能是积分商品兑换，手机话费充值，卡券兑换等。
+- 技术栈：Vue全家桶，Git，Vant，Mockjs，Shell
+- 收获：开发了通用头部，商品筛选，验证框，抽奖轮盘，银行列表筛选，卡券商品等组件，加深了对组件细粒度控制，状态分层的经验。 升级脚手架以后目录更简洁，维护性提高。
+
+[**陆合晶视频直播项目 管理端**]()
+- 项目描述：视频社交平台的后台管理系统，角色管理，文章管理，热推管理，视频审核，图像审核等。
+- 技术栈：Vuec全家桶，Iview，Sass，Svn。
+- 收获：解决遗留bug，使前端独立于后端开发，使用并推广了 mockjs，推进文档规范化，提高开发效率。使用算法实现了表格数据自动添加宽度。  参考antdesign设计重构了页面布局
+
+## 知识背景
+[**计算机知识** ]()
+
+- [《操作系统概论》]() 
+- [《数据库系统原理》]()
+- [《计算机网络原理》]()
