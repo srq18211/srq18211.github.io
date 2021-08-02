@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{176:function(t,n,e){"use strict";e.r(n);var i=e(0),o=Object(i.a)({},function(){var t=this.$createElement;return(this._self._c||t)("div",{staticClass:"content"})},[],!1,null,null,null);o.options.__file="productivity_tool.md";n.default=o.exports}}]);
