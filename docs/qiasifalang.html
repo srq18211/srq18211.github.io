@@ -14,8 +14,8 @@
 <p class="eyebrow">Line Art to STL</p>
 <h1>掐丝珐琅生成器</h1>
 <p class="hero-text">
-            这是一个小而美的MVP产品，不要指望它做所有的事情，尽可能提供干净的线稿（AI提示词：生成无毛刺，线宽一致的线稿）
-            需要人工服务或软件开发服务。建议咨询微信（备注来意）：z8631415926589。
+            这是一个小而美的MVP产品，尽可能提供干净的线稿（AI提示词：生成无毛刺，线宽一致的线稿）
+            需要人工服务（微调，添加五金件，精确尺寸）或软件开发服务。建议咨询微信（备注来意）：z8631415926589。
           </p>
 </div>
 <div class="hero-note">
@@ -33,7 +33,7 @@
 </div>
 <p>
               上传 PNG / JPG 线稿，或粘贴剪切板中的 Base64 图片，修补断裂、压制噪点、
-              平滑边缘，并将骨架作为点源采样拼接，再用 Canvas 曲线重绘统一线宽。
+              平滑边缘，曲线重绘统一线宽。
             </p>
 </div>
 <div class="preprocess-layout">
@@ -88,18 +88,14 @@
 <input checked="" id="uniformWidthToggle" type="checkbox"/>
 <span>统一线宽 <span aria-label="说明" class="help-tip" data-tip="把粗细不一的线重新画成尽量一致的宽度，适合做成实体线条。" role="img" tabindex="0">?</span></span>
 </label>
-<label class="check-chip">
-<input id="debugToggle" type="checkbox"/>
-<span>调试层 <span aria-label="说明" class="help-tip" data-tip="打开后可以看二值图、骨架点和拼接路径，方便判断问题出在识别、骨架还是连线。普通使用可以关掉。" role="img" tabindex="0">?</span></span>
-</label>
 </div>
 <label class="field">
 <span><span class="label-text">阈值 <span aria-label="说明" class="help-tip" data-tip="决定哪些地方算线条。数值越大，浅灰色也更容易被当成线；数值越小，只保留更黑的部分。" role="img" tabindex="0">?</span></span><strong id="thresholdValue">170</strong></span>
-<input id="thresholdInput" max="240" min="40" type="range" value="170"/>
+<input id="thresholdInput" max="240" min="40" type="range" value="240"/>
 </label>
 <label class="field">
 <span><span class="label-text">对比度 <span aria-label="说明" class="help-tip" data-tip="让黑白差别更明显。线稿发灰、边缘不清楚时可以加一点；加太多会让毛刺也变明显。" role="img" tabindex="0">?</span></span><strong id="contrastValue">28</strong></span>
-<input id="contrastInput" max="80" min="-80" type="range" value="28"/>
+<input id="contrastInput" max="80" min="-80" type="range" value="80"/>
 </label>
 <label class="field">
 <span><span class="label-text">降噪强度 <span aria-label="说明" class="help-tip" data-tip="去掉小黑点、小脏点。数值越大清理越狠，但太大可能把细小线条也删掉。" role="img" tabindex="0">?</span></span><strong id="denoiseValue">1</strong></span>
@@ -119,7 +115,7 @@
 </label>
 <label class="field" id="lineWidthField">
 <span><span class="label-text">统一线宽目标（mm） <span aria-label="说明" class="help-tip" data-tip="最终模型里线条大概想做多宽，单位是毫米。数值越大，实体线越粗；数值越小，细节更多但可能不好打印。" role="img" tabindex="0">?</span></span><strong id="lineWidthValue">1.2 mm</strong></span>
-<input id="lineWidthInput" max="12" min="0.2" step="0.1" type="range" value="1.2"/>
+<input id="lineWidthInput" max="12" min="0.2" step="0.1" type="range" value="0.6"/>
 </label>
 <label class="field" id="mergeDistanceField">
 <span><span class="label-text">曲线点合并距离 <span aria-label="说明" class="help-tip" data-tip="把距离太近的采样点合成一个，减少抖动和重复点。太低会锯齿，太高会丢细节。" role="img" tabindex="0">?</span></span><strong id="mergeDistanceValue">0.8</strong></span>
@@ -268,7 +264,6 @@
 <button class="primary-button" disabled="" id="exportButton" type="button">导出 STL</button>
 <span aria-label="说明" class="help-tip" data-tip="生成 3D 预览后才能导出。导出的 STL 可以拿去切片、打印或继续建模。" role="img" tabindex="0">?</span>
 </div>
-<p class="hint-line">提示：现在可以直接双击 index.html 打开本页面；如需继续开发源码，再按需重新打包脚本即可。</p>
 </div>
 </section>
 </main>
